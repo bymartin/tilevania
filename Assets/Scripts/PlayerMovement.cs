@@ -10,11 +10,13 @@ public class PlayerMovement : MonoBehaviour
     Vector2 moveInput;
     Rigidbody2D myRigidbody;
     Animator animator;
+    CapsuleCollider2D capsuleCollider;
 
     void Start()
     {
         myRigidbody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        capsuleCollider = GetComponent<CapsuleCollider2D>();
     }
 
     private void Update()
@@ -30,10 +32,10 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void OnJump(InputValue value) {
+        if (!capsuleCollider.IsTouchingLayers(LayerMask.GetMask("Ground"))) { return; }
         if (value.isPressed) {
             myRigidbody.velocity += new Vector2(0f, jumpSpeed);
         }
-        moveInput = value.Get<Vector2>();
     }
 
     void Run() {
