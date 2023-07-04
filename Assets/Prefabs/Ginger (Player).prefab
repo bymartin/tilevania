@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 113408103914037991}
   - component: {fileID: 3977459294264155664}
   - component: {fileID: 7642532429360825428}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ginger (Player)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35,7 +35,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1485986586090328051
 Animator:
