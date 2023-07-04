@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 113408103914037991}
   - component: {fileID: 3977459294264155664}
   - component: {fileID: 7642532429360825428}
+  - component: {fileID: 6951520980839075497}
   m_Layer: 8
   m_Name: Ginger (Player)
   m_TagString: Untagged
@@ -142,8 +143,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.039851427, y: -0.067194074}
-  m_Size: {x: 0.56423426, y: 0.95497555}
+  m_Offset: {x: -0.031173706, y: -0.04368311}
+  m_Size: {x: 0.6163025, y: 0.9079536}
   m_Direction: 0
 --- !u!50 &113408103914037991
 Rigidbody2D:
@@ -160,7 +161,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 3
+  m_GravityScale: 6
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -214,6 +215,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a2c13aacbfde433e829cef79b1c5671, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  runSpeed: 7.5
-  jumpSpeed: 13
-  climbSpeed: 7.5
+  runSpeed: 7
+  jumpSpeed: 20
+  climbSpeed: 5
+--- !u!61 &6951520980839075497
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6429902276826106326}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.031350136, y: -0.46014422}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.48646355, y: 0.09832394}
+  m_EdgeRadius: 0
