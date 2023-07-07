@@ -85,10 +85,11 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void Die() {
-        if (bodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemies"))) {
+        if (bodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemies", "Hazards"))) {
             isAlive = false;
             animator.SetTrigger("Dying");
             myRigidbody.velocity = deathKick;
+            // transform.localScale += new Vector3(2f, 2f, 0f);
             myRigidbody.velocity = new Vector2(0f, myRigidbody.velocity.y);
 
             Collider2D[] colliders = GetComponents<Collider2D>();
