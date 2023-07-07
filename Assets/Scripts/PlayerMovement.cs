@@ -15,6 +15,8 @@ public class PlayerMovement : MonoBehaviour
     BoxCollider2D feetCollider;
     float startingGravityScale;
 
+    bool isAlive = true;
+
     void Start()
     {
         myRigidbody = GetComponent<Rigidbody2D>();
@@ -26,21 +28,29 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+        if (!isAlive) { return; }
         Run();
         FlipSprite();
         ClimbLadder();
-        
+        Die();
     }
 
     void OnMove(InputValue value)
     {
+        if (!isAlive) { return; }
         moveInput = value.Get<Vector2>();
     }
 
     void OnJump(InputValue value) {
-        if (!feetCollider.IsTouchingLayers(LayerMask.GetMask("Ground"))) { return; }
+        if (!isAlive) { return; }
+        if (!feetCollider.IsTouchingLayers(LayerMask.GetMask("Ground")))
+        {
+            return;
+        }
         if (value.isPressed) {
             myRigidbody.velocity += new Vector2(0f, jumpSpeed);
+            // transform.localScale = new Vector2(1f, 1.5f);
+            // transform.localScale += new Vector3(0f, 1.5f, 0f);
         }
     }
 
@@ -71,6 +81,12 @@ public class PlayerMovement : MonoBehaviour
 
         bool playerHasVerticalSpeed = Mathf.Abs(myRigidbody.velocity.y) > Mathf.Epsilon;
         animator.SetBool("isClimbing", playerHasVerticalSpeed);
+    }
+
+    void Die() {
+        if (bodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemies"))) {
+            isAlive = false;
+        }
     }
 
 }
