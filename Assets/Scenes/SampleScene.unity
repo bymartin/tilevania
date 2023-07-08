@@ -5173,7 +5173,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.600533, y: -5.0154257, z: -10.598536}
+  m_LocalPosition: {x: -13.082611, y: -2.0815148, z: -10.598536}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5214,6 +5214,11 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!4 &582007510 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3937202289648904251, guid: 6b957ceb12d344d88988b64c19060b11, type: 3}
+  m_PrefabInstance: {fileID: 6968038444640772550}
+  m_PrefabAsset: {fileID: 0}
 --- !u!95 &1030651502 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 1485986586090328051, guid: 6b957ceb12d344d88988b64c19060b11, type: 3}
@@ -6458,7 +6463,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1607114195}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.596817, y: -5.59043, z: -10.598536}
+  m_LocalPosition: {x: -18.473183, y: -2.0804298, z: -10.598536}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6620,7 +6625,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1989219413}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.596817, y: -5.59043, z: -10.598536}
+  m_LocalPosition: {x: -18.473183, y: -2.0804298, z: -10.598536}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6671,7 +6676,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2000243213}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.596817, y: -5.59043, z: -10.598536}
+  m_LocalPosition: {x: -18.473183, y: -2.0804298, z: -10.598536}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -34442,11 +34447,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2823108147222730114, guid: 6b957ceb12d344d88988b64c19060b11, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.77
+      value: -23.3
       objectReference: {fileID: 0}
     - target: {fileID: 2823108147222730114, guid: 6b957ceb12d344d88988b64c19060b11, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.06
+      value: 2.45
       objectReference: {fileID: 0}
     - target: {fileID: 2823108147222730114, guid: 6b957ceb12d344d88988b64c19060b11, type: 3}
       propertyPath: m_LocalPosition.z
@@ -34484,6 +34489,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ginger (Player)
       objectReference: {fileID: 0}
+    - target: {fileID: 7642532429360825428, guid: 6b957ceb12d344d88988b64c19060b11, type: 3}
+      propertyPath: gun
+      value: 
+      objectReference: {fileID: 582007510}
+    - target: {fileID: 7642532429360825428, guid: 6b957ceb12d344d88988b64c19060b11, type: 3}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 8268588804135749236, guid: 10933477a4ee846baac6d523dcf7a22e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
