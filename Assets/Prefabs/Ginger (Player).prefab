@@ -49,7 +49,7 @@ GameObject:
   - component: {fileID: 6951520980839075497}
   m_Layer: 8
   m_Name: Ginger (Player)
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -130,7 +130,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 349450491
-  m_SortingLayer: 7
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: -2019140806, guid: b55a9517824604a5c809f2d44cd70dd8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

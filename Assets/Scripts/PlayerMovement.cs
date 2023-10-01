@@ -103,6 +103,7 @@ public class PlayerMovement : MonoBehaviour
             foreach (Collider2D collider in colliders) {
                 collider.enabled = false;
             }
+            FindObjectOfType<GameSession>().ProcessPlayerDeath();
         }
     }
 
